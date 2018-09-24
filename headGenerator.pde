@@ -22,7 +22,7 @@ void draw() {
     text("" + imageDimension, 110, 50, 100, 20);
 
     if(saveIMG){
-        mainImage.save("jpeg/g18-head "+ mainSeed +".png");
+        mainImage.save("jpeg/g18-head "+ mainSeed + "-" + int(headDistance) + ".png");
         saveIMG = false;
     }
 

@@ -41,7 +41,7 @@ public void draw() {
     text("" + imageDimension, 110, 50, 100, 20);
 
     if(saveIMG){
-        mainImage.save("jpeg/g18-head "+ mainSeed +".png");
+        mainImage.save("jpeg/g18-head "+ mainSeed + "-" + PApplet.parseInt(headDistance) + ".png");
         saveIMG = false;
     }
 
@@ -167,7 +167,6 @@ public PImage drawBackground(int width_, int height_, int mainSeed_) {
     PImage img = createImage(width_ * imageScale, height_ * imageScale, ARGB);
 
     graph.beginDraw();
-    // graph.background(bgColor);
 
     PVector lightPos = new PVector( random( height ), random( width ) );
 
